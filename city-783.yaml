@@ -1,0 +1,16 @@
+base00: "#3d2e1d" # Default background
+base01: "#e49da2" # Lighter background (status bars, panels)
+base02: "#f67f7f" # Selection background
+base03: "#e3c0b0" # Comments, invisibles, line highlight
+base04: "#eec1b4" # Dark foreground (secondary text)
+base05: "#f0c1c5" # Default foreground
+base06: "#ffffff" # Light foreground (emphasis)
+base07: "#ffffff" # Lightest foreground (prominent text)
+base08: "#3d2e1d" # Variables, error, deleted
+base09: "#E73232" # Integers, booleans, constants
+base0A: "#c68c71" # Classes, keywords, warnings
+base0B: "#d7866f" # Strings, success
+base0C: "#d97c84" # Support, regex, escape chars
+base0D: "#CA5B63" # Functions, methods, headings
+base0E: "#f3e1db" # Keywords, storage, selectors
+base0F: "#fdfdfc" # Deprecated, special cases

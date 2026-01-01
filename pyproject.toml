@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "omarchy-theme-tool"
+version = "0.1.0"
+description = "Apply Base16 schemes to Omarchy theme files."
+readme = "scripts/README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+  {name = "Omarchy Theme Tool"},
+]
+
+[project.scripts]
+omarchy-apply = "omarchy_theme_tool.apply_theme:main_cli"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["omarchy_theme_tool"]
