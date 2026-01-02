@@ -1,16 +1,24 @@
-base00: "#3d2e1d" # Default background
-base01: "#e49da2" # Lighter background (status bars, panels)
-base02: "#f67f7f" # Selection background
-base03: "#e3c0b0" # Comments, invisibles, line highlight
-base04: "#eec1b4" # Dark foreground (secondary text)
-base05: "#f0c1c5" # Default foreground
-base06: "#ffffff" # Light foreground (emphasis)
-base07: "#ffffff" # Lightest foreground (prominent text)
-base08: "#3d2e1d" # Variables, error, deleted
-base09: "#E73232" # Integers, booleans, constants
-base0A: "#c68c71" # Classes, keywords, warnings
-base0B: "#d7866f" # Strings, success
-base0C: "#d97c84" # Support, regex, escape chars
-base0D: "#CA5B63" # Functions, methods, headings
-base0E: "#f3e1db" # Keywords, storage, selectors
-base0F: "#fdfdfc" # Deprecated, special cases
+
+scheme: "CITY-783"
+author: "OldJobobo (github.com/OldJobobo), J.S. Brown"
+
+# === Base tones (reduced overall contrast) ===
+base00: "#181a1f" # Default background (darkest)
+base01: "#20232a" # Lighter background (status bars, panels)
+base02: "#2b2f37" # Selection background / active line
+base03: "#4b515b" # Comments, invisibles
+base04: "#6a707a" # Dark foreground (secondary text)
+base05: "#b9bec6" # Default foreground
+base06: "#d3d7dd" # Light foreground (emphasis)
+base07: "#eceff2" # Lightest foreground (UI text, highlights)
+
+# === Accent colors (toned down to match lower contrast) ===
+base08: "#b31414" # Variables, errors, deleted text
+base09: "#cc1f1f" # Integers, booleans, constants
+base0A: "#9e1a1a" # Classes, warnings
+base0B: "#d12b2b" # Strings, success
+base0C: "#8f949c" # Support, regex, escape characters
+base0D: "#ad2222" # Functions, methods, headings
+base0E: "#c3c8d0" # Keywords, storage, selectors
+base0F: "#e9edf0" # Deprecated, special cases
+
