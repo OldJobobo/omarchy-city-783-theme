@@ -15,14 +15,16 @@
 @define-color magenta #c3c8d0;
 @define-color cyan #8f949c;
 @define-color white #b9bec6;
-@define-color bright_black #4b515b;
-@define-color bright_red #b31414;
+@define-color bright_black #20232a;
+@define-color bright_red #cc1f1f;
 @define-color bright_green #d12b2b;
 @define-color bright_yellow #9e1a1a;
 @define-color bright_blue #ad2222;
-@define-color bright_magenta #c3c8d0;
+@define-color bright_magenta #e9edf0;
 @define-color bright_cyan #8f949c;
 @define-color bright_white #eceff2;
+@define-color selection_bg #9e1a1a;
+@define-color selection_fg #181a1f;
 
 /* Adwaita Color Overrides */
 @define-color accent_bg_color @blue;
@@ -33,25 +35,25 @@
 @define-color window_fg_color @foreground;
 
 /* Sidebar background and content */
-@define-color view_bg_color @black;
+@define-color view_bg_color @background;
 @define-color view_fg_color @foreground;
-@define-color sidebar_bg_color @black;
+@define-color sidebar_bg_color @background;
 @define-color sidebar_fg_color @foreground;
-@define-color sidebar_backdrop_color @black;
-@define-color sidebar_shade_color @black;
+@define-color sidebar_backdrop_color @background;
+@define-color sidebar_shade_color @background;
 
 @define-color headerbar_bg_color alpha(@foreground, 0.1);
 @define-color headerbar_fg_color @foreground;
-@define-color headerbar_backdrop_color @black;
-@define-color headerbar_shade_color @black;
+@define-color headerbar_backdrop_color @background;
+@define-color headerbar_shade_color @background;
 @define-color card_bg_color alpha(@foreground, 0.1);
 @define-color card_fg_color @foreground;
 
-@define-color popover_bg_color @black;
+@define-color popover_bg_color @background;
 @define-color popover_fg_color @foreground;
 
 @define-color destructive_bg_color @red;
-@define-color destructive_fg_color @background;
+@define-color destructive_fg_color @foreground;
 
 @define-color success_bg_color @green;
 @define-color success_fg_color @background;
@@ -60,7 +62,7 @@
 @define-color warning_fg_color @background;
 
 @define-color error_bg_color @red;
-@define-color error_fg_color @background;
+@define-color error_fg_color @foreground;
 
 @define-color dialog_bg_color @background;
 @define-color dialog_fg_color @foreground;
@@ -71,18 +73,18 @@
 @define-color theme_fg_color @foreground;
 @define-color theme_text_color @foreground;
 @define-color theme_bg_color @background;
-@define-color theme_base_color @black;
-@define-color theme_selected_bg_color @blue;
-@define-color theme_selected_fg_color @background;
+@define-color theme_base_color @background;
+@define-color theme_selected_bg_color @selection_bg;
+@define-color theme_selected_fg_color @selection_fg;
 @define-color insensitive_bg_color @background;
 @define-color insensitive_fg_color @bright_black;
-@define-color insensitive_base_color @black;
+@define-color insensitive_base_color @background;
 @define-color theme_unfocused_fg_color @foreground;
 @define-color theme_unfocused_text_color @foreground;
 @define-color theme_unfocused_bg_color @background;
-@define-color theme_unfocused_base_color @black;
-@define-color theme_unfocused_selected_bg_color @blue;
-@define-color theme_unfocused_selected_fg_color @background;
+@define-color theme_unfocused_base_color @background;
+@define-color theme_unfocused_selected_bg_color @selection_bg;
+@define-color theme_unfocused_selected_fg_color @selection_fg;
 @define-color unfocused_insensitive_color @bright_black;
 @define-color unfocused_borders alpha(@foreground, 0.1);
 @define-color warning_color @yellow;
@@ -91,8 +93,8 @@
 @define-color destructive_color @red;
 
 /* Content View Colors */
-@define-color content_view_bg @black;
-@define-color text_view_bg @black;
+@define-color content_view_bg @background;
+@define-color text_view_bg @background;
 
 /* GtkMessageDialog styling */
 /* Target the entire dialog's background */
@@ -115,7 +117,7 @@ messagedialog .secondary-text {
 
 /* Target the buttons in the dialog's action area */
 messagedialog button {
-    background-color: @black;
+    background-color: @background;
     color: @foreground;
     border: 1px solid @bright_black;
     padding: 10px;
@@ -168,7 +170,7 @@ filechooserbutton:drop(active) {
 }
 
 toast {
-    background-color: @black;
+    background-color: @background;
     color: @foreground;
 }
 
@@ -181,4 +183,3 @@ toast button.circular.flat.image-button:hover {
 * {
     border-radius: 0;
 }
-

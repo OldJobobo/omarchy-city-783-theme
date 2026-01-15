@@ -1,0 +1,65 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 38,
+  "margin": 0,
+  "spacing": 0,
+  "modules-left": ["custom/omarchy", "group/left-ws"],
+  "modules-center": ["clock"],
+  "modules-right": ["custom/net-gap", "network", "bluetooth", "pulseaudio", "group/system-stats"],
+  "custom/omarchy": {
+    "format": "<span font='omarchy'>\ue900</span>",
+    "on-click": "omarchy-menu",
+    "on-click-right": "xdg-terminal-exec",
+    "tooltip-format": "Omarchy Menu\n\nSuper + Alt + Space"
+  },
+  "group/left-ws": {
+    "modules": ["hyprland/workspaces"],
+    "orientation": "inherit"
+  },
+  "group/system-stats": {
+    "modules": ["cpu", "memory"],
+    "orientation": "inherit"
+  },
+  "hyprland/workspaces": {
+    "format": "{id}",
+    "sort-by-number": true,
+    "show-special": false,
+    "persistent-workspaces": {
+      "*": [1, 2, 3, 4, 5, 6, 7, 8]
+    }
+  },
+  "clock": {
+    "format": "{:%H 󰇙 %M 󰇙 %S}",
+    "interval": 1,
+    "tooltip": false
+  },
+  "cpu": {
+    "interval": 2,
+    "format": "CPU {usage}%"
+  },
+  "memory": {
+    "interval": 5,
+    "format": "MEM {percentage}%"
+  },
+  "network": {
+    "format-wifi": "󰤨 {essid}",
+    "format-ethernet": "󱫋",
+    "format-disconnected": "󰤮 offline",
+    "tooltip-format": "{ifname}\n{ipaddr}"
+  },
+  "bluetooth": {
+    "format": "󰔩",
+    "format-connected": "󰂱 {num_connections}",
+    "tooltip-format": "{device_alias}"
+  },
+  "pulseaudio": {
+    "format": "{icon}",
+    "format-muted": "󰖁",
+    "format-icons": ["󰫃", "󰫄", "󰫅", "󰫆", "󰫇", "󰫈"]
+  },
+  "custom/net-gap": {
+    "format": " ",
+    "tooltip": false
+  }
+}

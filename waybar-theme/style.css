@@ -1,0 +1,278 @@
+@define-color accent #ff2222;
+@define-color bg #181a1f;
+@define-color fg #eceff2;
+@define-color ws-bg #bebcc0;
+@define-color inactive #8f949c;
+@define-color ws-surface #2f343d;
+@define-color ws-empty #232831;
+@define-color ws-empty-text #8f949c;
+@define-color indicator-idle #9a9a9a;
+
+
+
+* {
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+}
+
+window#waybar {
+  background: @bg;
+  margin: 0 0 0 0;
+}
+
+#custom-omarchy {
+  background-color: @accent;
+  background-image: none;
+  color: @bg;
+  font-size: 22px;
+  font-weight: 900;
+  padding: 6px 12px;
+}
+
+#group-left-ws,
+#group-right-ws {
+  background: @bg;
+  background-image: linear-gradient(135deg, @bg 0%, @bg 85%, transparent 85%, transparent 100%);
+  padding: 0 6px;
+  min-width: 240px;
+}
+
+#custom-ws1,
+#custom-ws2,
+#custom-ws3,
+#custom-ws4,
+#custom-ws5,
+#custom-ws6,
+#custom-ws7,
+#custom-ws8 {
+  background: @ws-bg;
+  background-image: linear-gradient(135deg, @ws-surface 0%, @ws-surface 85%, @bg 85%, @bg 100%);
+  color: @fg;
+  padding: 0 2px 6px 2px;
+  margin: 0 4px 16px 4px;
+  min-width: 33px;
+  min-height: 24px;
+  border-radius: 0;
+  transition: background-color 256ms ease-in-out, color 256ms ease-in-out, min-width 256ms ease-in-out;
+}
+
+#custom-ws1.active,
+#custom-ws2.active,
+#custom-ws3.active,
+#custom-ws4.active,
+#custom-ws5.active,
+#custom-ws6.active,
+#custom-ws7.active,
+#custom-ws8.active {
+  color: @bg;
+  background: @ws-bg;
+  background-image: linear-gradient(135deg, @ws-bg 0%, @ws-bg 85%, @bg 85%, @bg 100%);
+}
+
+#custom-ws1.empty,
+#custom-ws2.empty,
+#custom-ws3.empty,
+#custom-ws4.empty,
+#custom-ws5.empty,
+#custom-ws6.empty,
+#custom-ws7.empty,
+#custom-ws8.empty {
+  color: @ws-empty-text;
+  background: @bg;
+  background-image: linear-gradient(135deg, @ws-empty 0%, @ws-empty 85%, @bg 85%, @bg 100%);
+}
+
+#custom-ws1:hover,
+#custom-ws2:hover,
+#custom-ws3:hover,
+#custom-ws4:hover,
+#custom-ws5:hover,
+#custom-ws6:hover,
+#custom-ws7:hover,
+#custom-ws8:hover {
+  background: @accent;
+  background-image: linear-gradient(135deg, @accent 0%, @accent 85%, @bg 85%, @bg 100%);
+  color: @fg;
+  min-width: 68px;
+}
+
+#custom-ws1,
+#custom-ws2,
+#custom-ws3,
+#custom-ws4 {
+  background-image: linear-gradient(225deg, @ws-surface 0%, @ws-surface 85%, @bg 85%, @bg 100%);
+}
+
+#custom-ws1.active,
+#custom-ws2.active,
+#custom-ws3.active,
+#custom-ws4.active {
+  background-image: linear-gradient(225deg, @ws-bg 0%, @ws-bg 85%, @bg 85%, @bg 100%);
+}
+
+#custom-ws1.empty,
+#custom-ws2.empty,
+#custom-ws3.empty,
+#custom-ws4.empty {
+  background-image: linear-gradient(225deg, @ws-empty 0%, @ws-empty 85%, @bg 85%, @bg 100%);
+}
+
+#custom-ws1:hover,
+#custom-ws2:hover,
+#custom-ws3:hover,
+#custom-ws4:hover {
+  background-image: linear-gradient(225deg, @accent 0%, @accent 85%, @bg 85%, @bg 100%);
+}
+
+#custom-ws5,
+#custom-ws6,
+#custom-ws7,
+#custom-ws8 {
+  background-image: linear-gradient(135deg, @ws-surface 0%, @ws-surface 85%, @bg 85%, @bg 100%);
+}
+
+#custom-ws5.active,
+#custom-ws6.active,
+#custom-ws7.active,
+#custom-ws8.active {
+  background-image: linear-gradient(135deg, @ws-bg 0%, @ws-bg 85%, @bg 85%, @bg 100%);
+}
+
+#custom-ws5.empty,
+#custom-ws6.empty,
+#custom-ws7.empty,
+#custom-ws8.empty {
+  background-image: linear-gradient(135deg, @ws-empty 0%, @ws-empty 85%, @bg 85%, @bg 100%);
+}
+
+#custom-ws5:hover,
+#custom-ws6:hover,
+#custom-ws7:hover,
+#custom-ws8:hover {
+  background-image: linear-gradient(135deg, @accent 0%, @accent 85%, @bg 85%, @bg 100%);
+}
+
+#clock {
+  background-color: transparent;
+  background-image: url("assets/clock-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: @bg;
+  font-family: "JetBrainsMono Nerd Font Propo", "JetBrainsMonoNL Nerd Font Propo", "JetBrainsMono Nerd Font", monospace;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 8px;
+  min-width: 256px;
+  padding: 0 0px;
+}
+
+#network,
+#bluetooth,
+#pulseaudio,
+#mpris,
+#idle_inhibitor {
+  background: @bg;
+  color: @fg;
+  padding: 4px 10px;
+  margin: 4px 0;
+  font-size: 22px;
+}
+
+#idle_inhibitor {
+  min-width: 26px;
+}
+
+#custom-screenrecording-indicator {
+  min-width: 26px;
+  font-size: 22px;
+}
+
+#idle_inhibitor.activated,
+#custom-screenrecording-indicator.active {
+  animation: indicator-breathe 3.5s ease-in-out infinite;
+}
+
+@keyframes indicator-breathe {
+  0% {
+    color: @indicator-idle;
+  }
+  35% {
+    color: @accent;
+  }
+  65% {
+    color: @accent;
+  }
+  100% {
+    color: @indicator-idle;
+  }
+}
+
+#pulseaudio {
+  margin-right: 8px;
+}
+
+#mpris.playing,
+#mpris.playing label {
+  color: #ffffff;
+  text-shadow: -90px 0 12px rgba(255, 90, 80, 0), -60px 0 12px rgba(255, 90, 80, 0.85), -30px 0 16px rgba(255, 90, 80, 1), 0 0 12px rgba(255, 90, 80, 0.85), 30px 0 12px rgba(255, 90, 80, 0);
+  animation: mpris-sweep 2s linear infinite, mpris-pulse 3.5s ease-in-out infinite;
+}
+
+#mpris {
+  font-size: 16px;
+  padding: 4px 12px;
+}
+
+#mpris,
+#mpris label {
+  color: @indicator-idle;
+}
+
+#mpris.paused,
+#mpris.stopped,
+#mpris.paused label,
+#mpris.stopped label {
+  color: @indicator-idle;
+}
+
+@keyframes mpris-sweep {
+  0% {
+    text-shadow: -120px 0 14px rgba(255, 90, 80, 0), -80px 0 14px rgba(255, 90, 80, 0.7), -40px 0 18px rgba(255, 90, 80, 1), 0 0 14px rgba(255, 90, 80, 0.7);
+  }
+  50% {
+    text-shadow: -40px 0 18px rgba(255, 90, 80, 1), 0 0 14px rgba(255, 90, 80, 0.8), 40px 0 14px rgba(255, 90, 80, 0.2), -80px 0 14px rgba(255, 90, 80, 0.2);
+  }
+  100% {
+    text-shadow: 40px 0 14px rgba(255, 90, 80, 0.2), 0 0 14px rgba(255, 90, 80, 0.8), -40px 0 18px rgba(255, 90, 80, 1), -80px 0 14px rgba(255, 90, 80, 0.7);
+  }
+}
+
+@keyframes mpris-pulse {
+  0% {
+    color: @indicator-idle;
+  }
+  40% {
+    color: @accent;
+  }
+  70% {
+    color: @accent;
+  }
+  100% {
+    color: @indicator-idle;
+  }
+}
+
+
+#cpu,
+#memory {
+  background: @accent;
+  color: @bg;
+  font-size: 20px;
+  padding: 0 6px;
+  min-width: 44px;
+}

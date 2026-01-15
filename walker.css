@@ -4,3 +4,75 @@
 @define-color border #2b2f37;
 @define-color foreground #b9bec6;
 @define-color background #181a1f;
+
+@define-color dk_red #9e1a1a;
+@define-color bright_red #d12b2b;
+
+window {
+    background-color: transparent;
+    background-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 34%, rgba(0, 0, 0, 0) 62%);
+    transition: opacity 600ms ease;
+}
+
+window .box-wrapper,
+#box {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    transition: opacity 600ms ease, background-color 600ms ease;
+    background-image:
+        linear-gradient(to bottom right, transparent 0 10px, @dk_red 10px, @bright_red 13px, transparent 13px),
+        linear-gradient(to bottom left, transparent 0 10px, @dk_red 10px, @bright_red 13px, transparent 13px),
+        linear-gradient(to top left, transparent 0 10px, @dk_red 10px, @bright_red 13px, transparent 13px),
+        linear-gradient(to top right, transparent 0 10px, @dk_red 10px, @bright_red 13px, transparent 13px),
+        linear-gradient(to bottom right, transparent 0 12px, @background 12px),
+        linear-gradient(to bottom left, transparent 0 12px, @background 12px),
+        linear-gradient(to top left, transparent 0 12px, @background 12px),
+        linear-gradient(to top right, transparent 0 12px, @background 12px),
+        linear-gradient(to right, @dk_red, @bright_red),
+        linear-gradient(to right, @dk_red, @bright_red),
+        linear-gradient(to bottom, @dk_red, @bright_red),
+        linear-gradient(to bottom, @dk_red, @bright_red),
+        linear-gradient(@background, @background),
+        linear-gradient(@background, @background),
+        linear-gradient(@background, @background),
+        linear-gradient(@background, @background),
+        linear-gradient(@background, @background);
+    background-size:
+        16px 16px,
+        16px 16px,
+        16px 16px,
+        16px 16px,
+        16px 16px,
+        16px 16px,
+        16px 16px,
+        16px 16px,
+        calc(100% - 32px) 3px,
+        calc(100% - 32px) 3px,
+        3px calc(100% - 32px),
+        3px calc(100% - 32px),
+        calc(100% - 32px) calc(100% - 32px),
+        calc(100% - 32px) 16px,
+        calc(100% - 32px) 16px,
+        16px calc(100% - 32px),
+        16px calc(100% - 32px);
+    background-position:
+        top left,
+        top right,
+        bottom right,
+        bottom left,
+        top left,
+        top right,
+        bottom right,
+        bottom left,
+        top center,
+        bottom center,
+        center left,
+        center right,
+        center,
+        top center,
+        bottom center,
+        center left,
+        center right;
+    background-repeat: no-repeat;
+}

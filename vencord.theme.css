@@ -1,9 +1,8 @@
 /**
-* @name base16 Discord
-* @author @bypass_
+* @name City-783 Discord
+* @author @oldjobobo
 * @version 0.1.0
-* @description Built using Aether and Pywal
-* @source https://github.com/imbypass/base16-Discord
+* @description City-783 Discord Theme
 **/
 
 /* import the parent */
@@ -11,19 +10,19 @@
 
 :root {
     --color00: #181a1f;
-    --color01: #b31414;
-    --color02: #d12b2b;
-    --color03: #9e1a1a;
-    --color04: #ad2222;
-    --color05: #c3c8d0;
-    --color06: #8f949c;
-    --color07: #b9bec6;
-    --color08: #4b515b;
-    --color09: #b31414;
-    --color10: #d12b2b;
-    --color11: #9e1a1a;
-    --color12: #ad2222;
-    --color13: #c3c8d0;
-    --color14: #8f949c;
-    --color15: #eceff2;
+    --color01: #20232a;
+    --color02: #2b2f37;
+    --color03: #4b515b;
+    --color04: #6a707a;
+    --color05: #b9bec6;
+    --color06: #d3d7dd;
+    --color07: #eceff2; /* Main text and channel icons */
+    --color08: #b31414;
+    --color09: #cc1f1f;
+    --color10: #9e1a1a;
+    --color11: #d12b2b;
+    --color12: #8f949c;
+    --color13: #ad2222;
+    --color14: #c3c8d0;
+    --color15: #e9edf0;
 }

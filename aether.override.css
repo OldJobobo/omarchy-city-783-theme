@@ -17,12 +17,12 @@
 @define-color magenta #c3c8d0;
 @define-color cyan #8f949c;
 @define-color white #b9bec6;
-@define-color bright_black #4b515b;
-@define-color bright_red #b31414;
+@define-color bright_black #20232a;
+@define-color bright_red #cc1f1f;
 @define-color bright_green #d12b2b;
 @define-color bright_yellow #9e1a1a;
 @define-color bright_blue #ad2222;
-@define-color bright_magenta #c3c8d0;
+@define-color bright_magenta #e9edf0;
 @define-color bright_cyan #8f949c;
 @define-color bright_white #eceff2;
 
