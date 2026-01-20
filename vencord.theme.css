@@ -640,6 +640,19 @@ div[class*="numberBadge"] {
     }
 }
 
+[class*="sidebar"]::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    background: rgba(158, 26, 26, 0.35);
+    transform: scaleX(0.5);
+    transform-origin: right;
+    pointer-events: none;
+}
+
 /* --- Light Theme Fix? --- */
 .theme-light {
     --base01: color-mix(in srgb, var(--color00) 95%, black) !important;
