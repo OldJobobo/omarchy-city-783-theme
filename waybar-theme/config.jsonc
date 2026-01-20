@@ -47,49 +47,49 @@
     "orientation": "inherit"
   },
   "custom/ws1": {
-    "exec": "/home/oldjobobo/Projects/themes/omarchy-city-783-theme/waybar-theme/scripts/workspace-button.sh 1",
+    "exec": "~/.config/waybar/scripts/workspace-button.sh 1",
     "return-type": "json",
     "interval": 1,
     "on-click": "hyprctl dispatch workspace 1"
   },
   "custom/ws2": {
-    "exec": "/home/oldjobobo/Projects/themes/omarchy-city-783-theme/waybar-theme/scripts/workspace-button.sh 2",
+    "exec": "~/.config/waybar/scripts/workspace-button.sh 2",
     "return-type": "json",
     "interval": 1,
     "on-click": "hyprctl dispatch workspace 2"
   },
   "custom/ws3": {
-    "exec": "/home/oldjobobo/Projects/themes/omarchy-city-783-theme/waybar-theme/scripts/workspace-button.sh 3",
+    "exec": "~/.config/waybar/scripts/workspace-button.sh 3",
     "return-type": "json",
     "interval": 1,
     "on-click": "hyprctl dispatch workspace 3"
   },
   "custom/ws4": {
-    "exec": "/home/oldjobobo/Projects/themes/omarchy-city-783-theme/waybar-theme/scripts/workspace-button.sh 4",
+    "exec": "~/.config/waybar/scripts/workspace-button.sh 4",
     "return-type": "json",
     "interval": 1,
     "on-click": "hyprctl dispatch workspace 4"
   },
   "custom/ws5": {
-    "exec": "/home/oldjobobo/Projects/themes/omarchy-city-783-theme/waybar-theme/scripts/workspace-button.sh 5",
+    "exec": "~/.config/waybar/scripts/workspace-button.sh 5",
     "return-type": "json",
     "interval": 1,
     "on-click": "hyprctl dispatch workspace 5"
   },
   "custom/ws6": {
-    "exec": "/home/oldjobobo/Projects/themes/omarchy-city-783-theme/waybar-theme/scripts/workspace-button.sh 6",
+    "exec": "~/.config/waybar/scripts/workspace-button.sh 6",
     "return-type": "json",
     "interval": 1,
     "on-click": "hyprctl dispatch workspace 6"
   },
   "custom/ws7": {
-    "exec": "/home/oldjobobo/Projects/themes/omarchy-city-783-theme/waybar-theme/scripts/workspace-button.sh 7",
+    "exec": "~/.config/waybar/scripts/workspace-button.sh 7",
     "return-type": "json",
     "interval": 1,
     "on-click": "hyprctl dispatch workspace 7"
   },
   "custom/ws8": {
-    "exec": "/home/oldjobobo/Projects/themes/omarchy-city-783-theme/waybar-theme/scripts/workspace-button.sh 8",
+    "exec": "~/.config/waybar/scripts/workspace-button.sh 8",
     "return-type": "json",
     "interval": 1,
     "on-click": "hyprctl dispatch workspace 8"
