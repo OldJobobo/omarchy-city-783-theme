@@ -22,15 +22,16 @@
 window#waybar {
   background: @bg;
   margin: 0 0 0 0;
+  min-height: 30px;
 }
 
 #custom-omarchy {
   background-color: @accent;
   background-image: none;
   color: @bg;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 900;
-  padding: 6px 12px;
+  padding: 4px 10px;
 }
 
 #group-left-ws,
@@ -38,7 +39,7 @@ window#waybar {
   background: @bg;
   background-image: linear-gradient(135deg, @bg 0%, @bg 85%, transparent 85%, transparent 100%);
   padding: 0 6px;
-  min-width: 240px;
+  min-width: 208px;
 }
 
 #custom-ws1,
@@ -52,10 +53,10 @@ window#waybar {
   background: @ws-bg;
   background-image: linear-gradient(135deg, @ws-surface 0%, @ws-surface 85%, @bg 85%, @bg 100%);
   color: @fg;
-  padding: 0 2px 6px 2px;
-  margin: 0 4px 16px 4px;
-  min-width: 33px;
-  min-height: 24px;
+  padding: 0 2px 4px 2px;
+  margin: 0 3px 12px 3px;
+  min-width: 28px;
+  min-height: 20px;
   border-radius: 0;
   transition: background-color 256ms ease-in-out, color 256ms ease-in-out, min-width 256ms ease-in-out;
 }
@@ -97,7 +98,7 @@ window#waybar {
   background: @accent;
   background-image: linear-gradient(135deg, @accent 0%, @accent 85%, @bg 85%, @bg 100%);
   color: @fg;
-  min-width: 68px;
+  min-width: 56px;
 }
 
 #custom-ws1,
@@ -164,10 +165,10 @@ window#waybar {
   background-size: cover;
   color: @bg;
   font-family: "JetBrainsMono Nerd Font Propo", "JetBrainsMonoNL Nerd Font Propo", "JetBrainsMono Nerd Font", monospace;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   margin: 0 8px;
-  min-width: 256px;
+  min-width: 220px;
   padding: 0 0px;
 }
 
@@ -175,21 +176,29 @@ window#waybar {
 #bluetooth,
 #pulseaudio,
 #mpris,
-#idle_inhibitor {
+#idle_inhibitor,
+#custom-voxtype,
+#custom-compact-toggle {
   background: @bg;
   color: @fg;
-  padding: 4px 10px;
-  margin: 4px 0;
-  font-size: 22px;
+  padding: 2px 8px;
+  margin: 2px 0;
+  font-size: 20px;
 }
 
-#idle_inhibitor {
+#idle_inhibitor,
+#custom-voxtype,
+#custom-compact-toggle {
   min-width: 26px;
+}
+
+#custom-compact-toggle.compact-on {
+  color: @accent;
 }
 
 #custom-screenrecording-indicator {
   min-width: 26px;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 #idle_inhibitor.activated,
@@ -272,7 +281,9 @@ window#waybar {
 #memory {
   background: @accent;
   color: @bg;
-  font-size: 20px;
+  font-size: 18px;
   padding: 0 6px;
-  min-width: 44px;
+  min-width: 38px;
 }
+
+@import "scripts/compact-state-active.css";

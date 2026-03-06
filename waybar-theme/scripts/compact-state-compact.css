@@ -1,0 +1,88 @@
+/* Compact layout overrides. */
+
+window#waybar {
+  min-height: 20px;
+}
+
+#custom-omarchy {
+  font-size: 16px;
+  padding: 1px 6px;
+}
+
+#group-left-ws,
+#group-right-ws {
+  min-width: 152px;
+}
+
+#custom-ws1,
+#custom-ws2,
+#custom-ws3,
+#custom-ws4,
+#custom-ws5,
+#custom-ws6,
+#custom-ws7,
+#custom-ws8 {
+  min-width: 20px;
+  min-height: 14px;
+  padding: 0 1px 1px 1px;
+  margin: 0 1px 5px 1px;
+}
+
+#custom-ws1:hover,
+#custom-ws2:hover,
+#custom-ws3:hover,
+#custom-ws4:hover,
+#custom-ws5:hover,
+#custom-ws6:hover,
+#custom-ws7:hover,
+#custom-ws8:hover {
+  min-width: 38px;
+}
+
+#clock {
+  font-size: 16px;
+  min-width: 160px;
+}
+
+#network,
+#bluetooth,
+#pulseaudio,
+#mpris,
+#idle_inhibitor,
+#custom-voxtype,
+#custom-compact-toggle {
+  font-size: 16px;
+  padding: 0 4px;
+  margin: 0;
+}
+
+#custom-screenrecording-indicator {
+  font-size: 16px;
+}
+
+#cpu,
+#memory {
+  font-size: 14px;
+  min-width: 28px;
+}
+
+#idle_inhibitor,
+#custom-voxtype,
+#custom-compact-toggle,
+#custom-screenrecording-indicator {
+  min-width: 20px;
+}
+
+#custom-net-gap {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#mpris,
+#group-system-stats {
+  opacity: 0;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}

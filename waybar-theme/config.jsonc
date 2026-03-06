@@ -1,12 +1,31 @@
 {
+  "reload_style_on_change": true,
   "layer": "top",
   "position": "top",
-  "height": 38,
+  "height": 0,
   "margin": 0,
   "spacing": 0,
-  "modules-left": ["custom/omarchy", "idle_inhibitor",  "custom/update", "custom/voxtype", "custom/screenrecording-indicator", "mpris"],
-  "modules-center": ["group/left-ws", "clock", "group/right-ws"],
-  "modules-right": ["custom/net-gap", "network", "bluetooth", "pulseaudio", "group/system-stats"],
+  "modules-left": [
+    "custom/omarchy",
+    "idle_inhibitor",
+    "custom/update",
+    "custom/voxtype",
+    "custom/screenrecording-indicator",
+    "mpris"
+  ],
+  "modules-center": [
+    "group/left-ws",
+    "clock",
+    "group/right-ws"
+  ],
+  "modules-right": [
+    "custom/net-gap",
+    "network",
+    "bluetooth",
+    "pulseaudio",
+    "group/system-stats",
+    "custom/compact-toggle"
+  ],
   "custom/omarchy": {
     "format": "<span font='omarchy'>\ue900</span>",
     "on-click": "omarchy-menu",
@@ -26,7 +45,7 @@
     "return-type": "json",
     "format": "{icon}",
     "format-icons": {
-      "idle": "",
+      "idle": "󰍭",
       "recording": "󰍬",
       "transcribing": "󰔟"
     },
@@ -34,16 +53,38 @@
     "on-click-right": "omarchy-voxtype-config",
     "on-click": "omarchy-voxtype-model"
   },
+  "custom/compact-toggle": {
+    "format": "{}",
+    "return-type": "json",
+    "exec": "bash ~/.config/waybar/scripts/compact-toggle.sh",
+    "on-click": "bash ~/.config/waybar/scripts/compact-toggle-switch.sh",
+    "signal": 9,
+    "interval": 3600,
+    "tooltip": true
+  },
   "group/left-ws": {
-    "modules": ["custom/ws1", "custom/ws2", "custom/ws3", "custom/ws4"],
+    "modules": [
+      "custom/ws1",
+      "custom/ws2",
+      "custom/ws3",
+      "custom/ws4"
+    ],
     "orientation": "inherit"
   },
   "group/right-ws": {
-    "modules": ["custom/ws5", "custom/ws6", "custom/ws7", "custom/ws8"],
+    "modules": [
+      "custom/ws5",
+      "custom/ws6",
+      "custom/ws7",
+      "custom/ws8"
+    ],
     "orientation": "inherit"
   },
   "group/system-stats": {
-    "modules": ["memory", "cpu"],
+    "modules": [
+      "memory",
+      "cpu"
+    ],
     "orientation": "inherit"
   },
   "custom/ws1": {
@@ -95,7 +136,7 @@
     "on-click": "hyprctl dispatch workspace 8"
   },
   "clock": {
-    "format": "{:%H 󰇙 %M 󰇙 %S}",
+    "format": "{:%H 󰇙 %M 󰇙 %p}",
     "format-alt": "{:%m 󰇙 %d 󰇙 %y}",
     "tooltip-format": "<span>{calendar}</span>",
     "calendar": {
@@ -106,7 +147,7 @@
         "today": "<span color='#d12b2b'><b>{}</b></span>"
       }
     },
-    "interval": 1
+    "interval": 60
   },
   "idle_inhibitor": {
     "format": "{icon}",
@@ -145,7 +186,14 @@
   "pulseaudio": {
     "format": "{icon}",
     "format-muted": "󰖁",
-    "format-icons": ["󰫃", "󰫄", "󰫅", "󰫆", "󰫇", "󰫈"],
+    "format-icons": [
+      "󰫃",
+      "󰫄",
+      "󰫅",
+      "󰫆",
+      "󰫇",
+      "󰫈"
+    ],
     "on-click": "omarchy-launch-audio",
     "on-click-right": "pamixer -t",
     "tooltip-format": "Playing at {volume}%",
