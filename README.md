@@ -29,15 +29,7 @@ omarchy-theme-install https://github.com/OldJobobo/omarchy-city-783-theme
 
 ## Wallpapers
 
-<table>
-  <tr>
-    <td><img src="backgrounds/1337266.png" width="220" alt="1337266"></td>
-    <td><img src="backgrounds/1359175.jpeg" width="220" alt="1359175"></td>
-    <td><img src="backgrounds/1378852.png" width="220" alt="1378852"></td>
-  </tr>
-  <tr>
-    <td><img src="backgrounds/886634.jpg" width="220" alt="886634"></td>
-    <td><img src="backgrounds/image-wm.png" width="220" alt="image-wm"></td>
-    <td><img src="backgrounds/red_atrium_stairs.jpg" width="220" alt="red_atrium_stairs"></td>
-  </tr>
-</table>
+| | | |
+| --- | --- | --- |
+| ![](backgrounds/0-gasmask-triad.png) | ![](backgrounds/1-city-783.png) | ![](backgrounds/2-crimson-diver.png) |
+| ![](backgrounds/3-crimson-corridor.jpg) | ![](backgrounds/4-red-monolith.jpeg) | ![](backgrounds/5-red-atrium.jpg) |
