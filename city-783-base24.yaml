@@ -1,0 +1,37 @@
+system: "base24"
+name: "City 783"
+slug: "city-783"
+author: "OldJobobo (github.com/OldJobobo), J.S. Brown"
+variant: "dark"
+
+palette:
+  # --- rain-blackened city ramp ---
+  base00: "#181a1f" # Night Asphalt   - default background
+  base01: "#20232a" # Service Tunnel  - lighter background
+  base02: "#2b2f37" # Wet Concrete    - selection background / active line
+  base03: "#4b515b" # Exhaust Steel   - comments / muted text
+
+  base04: "#6a707a" # Overpass Gray   - dark foreground
+  base05: "#b9bec6" # Sodium Haze     - default foreground
+  base06: "#d3d7dd" # Glass Mist      - light foreground
+  base07: "#eceff2" # Rain Flash      - brightest foreground
+
+  # --- emergency signage accents ---
+  base08: "#b31414" # Siren Red       - red / error
+  base09: "#cc1f1f" # Brake Light     - red constant
+  base0A: "#9e1a1a" # Rust Signal     - dark red warning
+  base0B: "#d12b2b" # Hot Wiring      - bright red success
+  base0C: "#8f949c" # Utility Fog     - cool gray support
+  base0D: "#ad2222" # Exit Glyph      - red function
+  base0E: "#c3c8d0" # Arc Glass       - pale gray keyword
+  base0F: "#e9edf0" # White Noise     - near-white special
+
+  # --- base24 extension ---
+  base10: "#101216" # Underpass Black - darker background
+  base11: "#090a0d" # Transit Void    - darkest background
+  base12: "#e53939" # Alarm Flare     - bright red
+  base13: "#f04a4a" # Hot Signal      - brighter red constant
+  base14: "#ff5c5c" # Fresh Warning   - brightest red
+  base15: "#aab0b9" # Rain Static     - bright cool gray
+  base16: "#dce0e6" # Arc White       - bright pale gray
+  base17: "#f5f7f9" # Floodlight      - bright white

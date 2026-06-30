@@ -2,7 +2,7 @@
 -- Source: omarchy-city-783-theme/hyprland.conf
 
 local activeBorderColor = {
-  colors = { "rgb(ad2222)", "rgb(ad2222)", "rgb(ad2222)", "rgb(ad2222)", "rgb(feccca)", "rgb(ad2222)", "rgb(ad2222)", "rgb(ad2222)", "rgb(ad2222)", "rgb(ad2222)" },
+  colors = { "rgb(ad2222)", "rgb(ad2222)", "rgb(ad2222)", "rgb(ad2222)", "rgb(e9edf0)", "rgb(ad2222)", "rgb(ad2222)", "rgb(ad2222)", "rgb(ad2222)", "rgb(ad2222)" },
   angle = 35,
 }
 
