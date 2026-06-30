@@ -144,7 +144,7 @@
       "format": {
         "month": "<span color='#c3c8d0'><b>{}</b></span>",
         "weekdays": "<span color='#9e1a1a'><b>{}</b></span>",
-        "today": "<span color='#d12b2b'><b>{}</b></span>"
+        "today": "<span color='#ad2222'><b>{}</b></span>"
       }
     },
     "interval": 60

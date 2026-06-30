@@ -13,12 +13,11 @@ base06: "#d3d7dd" # Light foreground (emphasis)
 base07: "#eceff2" # Lightest foreground (UI text, highlights)
 
 # === Accent colors (toned down to match lower contrast) ===
-base08: "#b31414" # Variables, errors, deleted text
+base08: "#e53939" # Variables, errors, deleted text
 base09: "#cc1f1f" # Integers, booleans, constants
 base0A: "#9e1a1a" # Classes, warnings
-base0B: "#d12b2b" # Strings, success
+base0B: "#dce0e6" # Strings, success
 base0C: "#8f949c" # Support, regex, escape characters
 base0D: "#ad2222" # Functions, methods, headings
 base0E: "#c3c8d0" # Keywords, storage, selectors
-base0F: "#e9edf0" # Deprecated, special cases
-
+base0F: "#6a3030" # Deprecated, special cases

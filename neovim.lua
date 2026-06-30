@@ -18,14 +18,14 @@ return {
 				base07 = "#eceff2", -- Light background
 
 				-- Accent colors (base08-base0F)
-				base08 = "#b31414", -- Variables, errors, red
+				base08 = "#e53939", -- Variables, errors, red
 				base09 = "#cc1f1f", -- Integers, constants, orange
 				base0A = "#9e1a1a", -- Classes, types, yellow
-				base0B = "#d12b2b", -- Strings, green
+				base0B = "#dce0e6", -- Strings, green
 				base0C = "#8f949c", -- Support, regex, cyan
 				base0D = "#ad2222", -- Functions, keywords, blue
 				base0E = "#c3c8d0", -- Keywords, storage, magenta
-				base0F = "#e9edf0", -- Deprecated, brown/yellow
+				base0F = "#6a3030", -- Deprecated, brown/yellow
 			},
 		},
 		config = function(_, opts)

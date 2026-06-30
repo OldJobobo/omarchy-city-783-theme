@@ -17,21 +17,21 @@ palette:
   base07: "#eceff2" # Rain Flash      - brightest foreground
 
   # --- emergency signage accents ---
-  base08: "#b31414" # Siren Red       - red / error
-  base09: "#cc1f1f" # Brake Light     - red constant
-  base0A: "#9e1a1a" # Rust Signal     - dark red warning
-  base0B: "#d12b2b" # Hot Wiring      - bright red success
+  base08: "#e53939" # Alarm Flare     - error / destructive
+  base09: "#cc1f1f" # Brake Light     - urgent constants
+  base0A: "#9e1a1a" # Rust Signal     - warning / caution
+  base0B: "#dce0e6" # Arc White       - success / added / confirmed
   base0C: "#8f949c" # Utility Fog     - cool gray support
   base0D: "#ad2222" # Exit Glyph      - red function
   base0E: "#c3c8d0" # Arc Glass       - pale gray keyword
-  base0F: "#e9edf0" # White Noise     - near-white special
+  base0F: "#6a3030" # Dried Signal    - deprecated / embedded
 
   # --- base24 extension ---
   base10: "#101216" # Underpass Black - darker background
   base11: "#090a0d" # Transit Void    - darkest background
-  base12: "#e53939" # Alarm Flare     - bright red
-  base13: "#f04a4a" # Hot Signal      - brighter red constant
-  base14: "#ff5c5c" # Fresh Warning   - brightest red
+  base12: "#ff5c5c" # Fresh Alarm     - bright error
+  base13: "#f04a4a" # Hot Signal      - bright urgent / warning
+  base14: "#eceff2" # Rain Flash      - bright success / confirmed
   base15: "#aab0b9" # Rain Static     - bright cool gray
   base16: "#dce0e6" # Arc White       - bright pale gray
   base17: "#f5f7f9" # Floodlight      - bright white

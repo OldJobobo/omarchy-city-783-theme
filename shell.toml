@@ -8,7 +8,7 @@ background       = "#181a1f"
 background-alpha = 1.0
 text             = "#b9bec6"
 # Modules calling attention to themselves (recording, voxtype, alerts, updates)
-active           = "#b31414"
+active           = "#e53939"
 # Cross-axis size at font base-size 12. size-horizontal is the height of
 # top/bottom bars; size-vertical is the width of left/right bars. With
 # scale-with-font enabled, these grow/shrink with [font] base-size.
@@ -20,8 +20,8 @@ size-vertical    = 28
 # Shared Hyprland-derived border tokens. Surface sections reference these so
 # lock, notifications, popups, and menu-style cards stay aligned with the
 # current Hyprland active-border gradient.
-active-border            = "#ad2222 #ad2222 #ad2222 #ad2222 #e9edf0 #ad2222 #ad2222 #ad2222 #ad2222 #ad2222 35deg"
-active-border-foreground = "#ad2222 #ad2222 #ad2222 #ad2222 #e9edf0 #ad2222 #ad2222 #ad2222 #ad2222 #ad2222 35deg"
+active-border            = "#ad2222 #ad2222 #ad2222 #ad2222 #eceff2 #ad2222 #ad2222 #ad2222 #ad2222 #ad2222 35deg"
+active-border-foreground = "#ad2222 #ad2222 #ad2222 #ad2222 #eceff2 #ad2222 #ad2222 #ad2222 #ad2222 #ad2222 35deg"
 
 [controls]
 # Shared state tokens for interactive control chrome (buttons, dropdowns,
@@ -195,9 +195,9 @@ selected-border-alpha     = 0.25
 background       = "#181a1f"
 background-alpha = 1.0
 text             = "#b9bec6"
-text-error       = "#b31414"
+text-error       = "#e53939"
 border           = "hyprland.active-border"
-border-error     = "#b31414"
+border-error     = "#e53939"
 border-alpha     = 1.0
 scrim            = "#181a1f"
 scrim-alpha      = 0.5
@@ -214,10 +214,10 @@ background       = "#181a1f"
 background-alpha = 0.8
 text             = "#b9bec6"
 placeholder      = "#82868d"
-text-error       = "#b31414"
+text-error       = "#e53939"
 border           = "hyprland.active-border"
 border-active    = "hyprland.active-border"
-border-error     = "#b31414"
+border-error     = "#e53939"
 border-alpha     = 1.0
 # selection is the text-selection tint inside the input field.
 selection        = "#ad2222"
