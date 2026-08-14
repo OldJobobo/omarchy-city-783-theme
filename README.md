@@ -27,13 +27,13 @@ omarchy-theme-install https://github.com/OldJobobo/omarchy-city-783-theme
 
 <table>
   <tr>
-    <td><img src="backgrounds/0-gasmask-triad.png" width="220" alt="Gasmask triad wallpaper"></td>
-    <td><img src="backgrounds/1-city-783.png" width="220" alt="City 783 skyline wallpaper"></td>
-    <td><img src="backgrounds/2-crimson-diver.png" width="220" alt="Crimson diver wallpaper"></td>
+    <td><img src="backgrounds/0-gasmask-triad.jpg" width="220" alt="Gasmask triad wallpaper"></td>
+    <td><img src="backgrounds/1-city-783.jpg" width="220" alt="City 783 skyline wallpaper"></td>
+    <td><img src="backgrounds/2-crimson-diver.jpg" width="220" alt="Crimson diver wallpaper"></td>
   </tr>
   <tr>
     <td><img src="backgrounds/3-crimson-corridor.jpg" width="220" alt="Crimson corridor wallpaper"></td>
-    <td><img src="backgrounds/4-red-monolith.jpeg" width="220" alt="Red monolith wallpaper"></td>
+    <td><img src="backgrounds/4-red-monolith.jpg" width="220" alt="Red monolith wallpaper"></td>
     <td><img src="backgrounds/5-red-atrium.jpg" width="220" alt="Red atrium wallpaper"></td>
   </tr>
 </table>

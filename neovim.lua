@@ -1,31 +1,47 @@
 return {
 	{
 		"bjarneo/aether.nvim",
-		branch = "v2",
+		branch = "v3",
 		name = "aether",
 		priority = 1000,
 		opts = {
 			transparent = false,
 			colors = {
-				-- Monotone shades (base00-base07)
-				base00 = "#181a1f", -- Default background
-				base01 = "#20232a", -- Lighter background (status bars)
-				base02 = "#2b2f37", -- Selection background
-				base03 = "#4b515b", -- Comments, invisibles
-				base04 = "#6a707a", -- Dark foreground
-				base05 = "#b9bec6", -- Default foreground
-				base06 = "#d3d7dd", -- Light foreground
-				base07 = "#eceff2", -- Light background
+				accent = "#ad2222",
+				cursor = "#eceff2",
+				foreground = "#b9bec6",
+				background = "#181a1f",
+				selection_foreground = "#eceff2",
+				selection_background = "#2b2f37",
 
-				-- Accent colors (base08-base0F)
-				base08 = "#e53939", -- Variables, errors, red
-				base09 = "#cc1f1f", -- Integers, constants, orange
-				base0A = "#9e1a1a", -- Classes, types, yellow
-				base0B = "#dce0e6", -- Strings, green
-				base0C = "#8f949c", -- Support, regex, cyan
-				base0D = "#ad2222", -- Functions, keywords, blue
-				base0E = "#c3c8d0", -- Keywords, storage, magenta
-				base0F = "#6a3030", -- Deprecated, brown/yellow
+				bg = "#181a1f",
+				lighter_bg = "#20232a",
+				selection = "#2b2f37",
+				muted = "#4b515b",
+				dark_fg = "#6a707a",
+				fg = "#b9bec6",
+				light_fg = "#d3d7dd",
+				bright_fg = "#eceff2",
+
+				red = "#e53939",
+				orange = "#cc1f1f",
+				yellow = "#9e1a1a",
+				green = "#dce0e6",
+				cyan = "#8f949c",
+				blue = "#ad2222",
+				purple = "#c3c8d0",
+				magenta = "#c3c8d0",
+				brown = "#6a3030",
+
+				dark_bg = "#101216",
+				darker_bg = "#090a0d",
+				bright_red = "#ff5c5c",
+				bright_yellow = "#f04a4a",
+				bright_green = "#eceff2",
+				bright_cyan = "#aab0b9",
+				bright_blue = "#dce0e6",
+				bright_purple = "#f5f7f9",
+				bright_magenta = "#f5f7f9",
 			},
 		},
 		config = function(_, opts)
