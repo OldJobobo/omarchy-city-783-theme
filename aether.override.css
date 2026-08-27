@@ -32,7 +32,7 @@
 @define-color theme_base_color @background;
 @define-color theme_text_color @foreground;
 @define-color theme_selected_bg_color @blue;
-@define-color theme_selected_fg_color @background;
+@define-color theme_selected_fg_color @bright_white;
 @define-color insensitive_bg_color alpha(@background, 0.5);
 @define-color insensitive_fg_color alpha(@foreground, 0.5);
 @define-color insensitive_base_color @background;
@@ -41,12 +41,12 @@
 @define-color theme_unfocused_base_color @background;
 @define-color theme_unfocused_text_color @foreground;
 @define-color theme_unfocused_selected_bg_color @blue;
-@define-color theme_unfocused_selected_fg_color @background;
+@define-color theme_unfocused_selected_fg_color @bright_white;
 
 /* Adwaita Color Overrides */
 @define-color accent_bg_color @blue;
 @define-color accent_fg_color @bright_white;
-@define-color accent_color @cyan;
+@define-color accent_color @bright_red;
 
 @define-color window_bg_color @background;
 @define-color window_fg_color @foreground;
@@ -54,18 +54,18 @@
 /* Sidebar background and content */
 @define-color view_bg_color @background;
 @define-color view_fg_color @foreground;
-@define-color sidebar_bg_color @background;
+@define-color sidebar_bg_color #20232a;
 @define-color sidebar_fg_color @foreground;
 @define-color sidebar_backdrop_color @background;
 @define-color sidebar_shade_color @background;
 
-@define-color headerbar_bg_color alpha(@foreground, 0.05);
+@define-color headerbar_bg_color #20232a;
 @define-color headerbar_fg_color @foreground;
 @define-color headerbar_backdrop_color @background;
 @define-color headerbar_shade_color @background;
 @define-color headerbar_border_color alpha(@foreground, 0.15);
 
-@define-color card_bg_color alpha(@foreground, 0.03);
+@define-color card_bg_color #20232a;
 @define-color card_fg_color @foreground;
 @define-color card_shade_color @background;
 
@@ -75,23 +75,23 @@
 @define-color shade_color @background;
 @define-color scrollbar_outline_color @background;
 
-@define-color popover_bg_color @background;
+@define-color popover_bg_color #20232a;
 @define-color popover_fg_color @foreground;
 
 @define-color dialog_bg_color @background;
 @define-color dialog_fg_color @foreground;
 
-@define-color destructive_bg_color @red;
-@define-color destructive_fg_color @bright_white;
+@define-color destructive_bg_color @bright_red;
+@define-color destructive_fg_color @background;
 
 @define-color success_bg_color @green;
-@define-color success_fg_color @bright_white;
+@define-color success_fg_color @background;
 
-@define-color warning_bg_color @yellow;
-@define-color warning_fg_color @bright_white;
+@define-color warning_bg_color @bright_yellow;
+@define-color warning_fg_color @background;
 
-@define-color error_bg_color @red;
-@define-color error_fg_color @bright_white;
+@define-color error_bg_color @bright_red;
+@define-color error_fg_color @background;
 
 @define-color borders alpha(@foreground, 0.15);
 
@@ -135,7 +135,7 @@
 @define-color dropdown_fg_color @foreground;
 @define-color dropdown_hover_bg_color alpha(@blue, 0.3);
 @define-color dropdown_selected_bg_color @blue;
-@define-color dropdown_selected_fg_color @background;
+@define-color dropdown_selected_fg_color @bright_white;
 
 /* Pathbar/Breadcrumb colors */
 @define-color pathbar_bg_color @background;
@@ -159,12 +159,12 @@
 @define-color treeview_fg_color @foreground;
 
 /* Link colors */
-@define-color link_color @blue;
+@define-color link_color @bright_red;
 @define-color link_visited_color @magenta;
 
 /* Selection colors (for text selection, etc) */
 @define-color selection_bg_color @blue;
-@define-color selection_fg_color @background;
+@define-color selection_fg_color @bright_white;
 
 /* Content view (file browser grid/list) */
 @define-color content_view_bg @background;

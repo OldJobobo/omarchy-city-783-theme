@@ -4,9 +4,10 @@
 @define-color muted #4b515b;
 @define-color card_bg #20232a;
 @define-color text_dark #181a1f;
-@define-color accent_hover #dce0e6;
-@define-color selected_tab #ad2222;
+@define-color accent_hover #ff5c5c;
+@define-color selected_tab #ff5c5c;
 @define-color text #b9bec6;
+@define-color bright_text #eceff2;
 
 * {
   all: unset;
@@ -75,12 +76,12 @@ flowboxchild:hover > .card, button:hover > .card, flowboxchild:active > .card, f
     padding: 0.5rem 1rem;
     border-radius: 5px;
     background-color: @accent;
-    color: @text_dark;
+    color: @bright_text;
     transition: all 0.2s ease;
 }
 
 .region-button > label {
-    color: @text_dark;
+    color: @bright_text;
 }
 
 .region-button:not(:disabled):hover, .region-button:not(:disabled):focus {

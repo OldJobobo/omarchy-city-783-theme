@@ -10,6 +10,13 @@ background = "#181a1f"
 selection_foreground = "#eceff2"
 selection_background = "#2b2f37"
 
+# Readable UI roles. Keep the darker authored colors for fills and borders;
+# use these companions whenever a color carries normal-sized text.
+readable_muted = "#8f949c"
+text_accent = "#ff5c5c"
+warning_text = "#f04a4a"
+border = "#4b515b"
+
 bg = "#181a1f"
 lighter_bg = "#20232a"
 selection = "#2b2f37"
@@ -40,7 +47,6 @@ bright_magenta = "#f5f7f9"
 hyprland_active_border = "#ad2222 #ad2222 #ad2222 #ad2222 #eceff2 #ad2222 #ad2222 #ad2222 #ad2222 #ad2222 35deg"
 hyprland_inactive_border = "#4b515b"
 active_border_color = "#ad2222"
-active_tab_background = "#20232a"
 
 color0 = "#181a1f"
 color1 = "#e53939"

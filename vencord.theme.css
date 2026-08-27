@@ -110,11 +110,11 @@
     --card-primary-bg: var(--base02) !important;
     --card-background-default: var(--base02) !important;
     --channel-icon: var(--base0B) !important;
-    --channels-default: var(--base03) !important;
-    --channel-text-area-placeholder: var(--base03) !important;
+    --channels-default: var(--base0C) !important;
+    --channel-text-area-placeholder: var(--base0C) !important;
     --channeltextarea-background: var(--base01) !important;
     --chat-background-default: var(--base01) !important;
-    --chat-text-muted: var(--base03) !important;
+    --chat-text-muted: var(--base0C) !important;
     --checkbox-background-checked: var(--base0D) !important;
     --checkbox-border-checked: var(--base0D) !important;
     --checkbox-background-default: var(--base02) !important;
@@ -139,10 +139,10 @@
     --info-warning-foreground: var(--base0A) !important;
     --input-background: var(--base02) !important;
     --input-border: var(--base03) !important;
-    --input-placeholder-text: var(--base03) !important;
+    --input-placeholder-text: var(--base05) !important;
     --interactive-active: var(--color07) !important;
     --interactive-hover: var(--color07) !important;
-    --interactive-muted: var(--base03) !important;
+    --interactive-muted: var(--base0C) !important;
     --interactive-normal: var(--color07) !important;
     --mention-background: color-mix(in srgb, var(--base0B) 30%, var(--base01)) !important;
     --mention-foreground: var(--base05) !important;
@@ -201,13 +201,13 @@
     --text-feedback-warning: var(--base09) !important;
     --text-feedback-success: var(--base0B) !important;
     --text-link: var(--base0B) !important;
-    --text-muted: var(--base03) !important;
+    --text-muted: var(--base0C) !important;
     --text-negative: var(--base08) !important;
     --text-normal: var(--base05) !important;
     --text-positive: var(--base0B) !important;
     --text-primary: var(--base05) !important;
     --text-secondary: var(--base04) !important;
-    --text-tertiary: var(--base03) !important;
+    --text-tertiary: var(--base0C) !important;
     --text-warning: var(--base09) !important;
     --textbox-markdown-syntax: var(--base05) !important;
     --theme-base-color: var(--base00) !important;
@@ -218,7 +218,7 @@
     --white: var(--color05) !important;
     --yellow-360: var(--base0A) !important;
     --yellow-300: var(--base0A) !important;
-    --__lottieIconColor: var(--base03) !important;
+    --__lottieIconColor: var(--base0C) !important;
     --card-background-default: var(--base02) !important;
     --redesign-button-secondary-background: var(--base03) !important;
 }

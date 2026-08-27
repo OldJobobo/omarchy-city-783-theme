@@ -3,9 +3,9 @@
 .theme-dark, .theme-light {
   /* Core colors */
   --background-primary: #181a1f;
-  --background-primary-alt: #181a1f;
-  --background-secondary: #181a1f;
-  --background-secondary-alt: #181a1f;
+  --background-primary-alt: #20232a;
+  --background-secondary: #20232a;
+  --background-secondary-alt: #2b2f37;
   --text-normal: #b9bec6;
 
   /* Selection colors */
@@ -15,17 +15,17 @@
   --background-modifier-border: #4b515b;
 
   /* Semantic heading colors */
-  --text-title-h1: #e53939;
+  --text-title-h1: #ff5c5c;
   --text-title-h2: #dce0e6;
-  --text-title-h3: #9e1a1a;
-  --text-title-h4: #ad2222;
+  --text-title-h3: #f04a4a;
+  --text-title-h4: #ff5c5c;
   --text-title-h5: #c3c8d0;
   --text-title-h6: #c3c8d0;
 
   /* Links and accents */
-  --text-link: #ad2222;
-  --text-accent: #ad2222;
-  --text-accent-hover: #ad2222;
+  --text-link: #ff5c5c;
+  --text-accent: #ff5c5c;
+  --text-accent-hover: #f04a4a;
   --interactive-accent: #ad2222;
   --interactive-accent-hover: #ad2222;
 
@@ -42,7 +42,7 @@
   --text-success: #dce0e6;
 
   /* Tags */
-  --tag-color: #8f949c;
+  --tag-color: #eceff2;
   --tag-background: #4b515b;
 
   /* Graph */
@@ -67,12 +67,12 @@
 }
 
 /* Syntax highlighting */
-.cm-s-obsidian span.cm-keyword { color: #e53939; }
+.cm-s-obsidian span.cm-keyword { color: #ff5c5c; }
 .cm-s-obsidian span.cm-string { color: #dce0e6; }
-.cm-s-obsidian span.cm-number { color: #9e1a1a; }
-.cm-s-obsidian span.cm-comment { color: #4b515b; }
-.cm-s-obsidian span.cm-operator { color: #ad2222; }
-.cm-s-obsidian span.cm-def { color: #ad2222; }
+.cm-s-obsidian span.cm-number { color: #f04a4a; }
+.cm-s-obsidian span.cm-comment { color: #8f949c; }
+.cm-s-obsidian span.cm-operator { color: #dce0e6; }
+.cm-s-obsidian span.cm-def { color: #ff5c5c; }
 
 /* Links */
 .markdown-rendered a {
@@ -86,14 +86,14 @@
 
 /* Active elements */
 .workspace-leaf.mod-active .workspace-leaf-header-title {
-  color: var(--interactive-accent);
+  color: var(--text-accent);
 }
 
 .nav-file-title.is-active {
-  color: var(--interactive-accent);
+  color: var(--text-accent);
 }
 
 /* Search results */
 .search-result-file-title {
-  color: var(--interactive-accent);
+  color: var(--text-accent);
 }

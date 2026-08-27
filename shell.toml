@@ -47,17 +47,17 @@ hover-cursor-border-alpha = 0.25
 # Focus: Qt activeFocus. Mirror the hover-cursor values by default so
 # mouse hover, keyboard cursor, and tab focus all read as the same state
 # — themes that want focus to stand out override these four lines.
-focus-color        = "#b9bec6"
-focus-fill-alpha   = 0.08
-focus-border       = "#b9bec6"
-focus-border-width = 1
-focus-border-alpha = 0.25
+focus-color        = "#eceff2"
+focus-fill-alpha   = 0.10
+focus-border       = "#ad2222 #ad2222 #ad2222 #ad2222 #eceff2 #ad2222 #ad2222 #ad2222 #ad2222 #ad2222 35deg"
+focus-border-width = 2
+focus-border-alpha = 1.0
 
 # Selected: persistent chosen/current state.
-selected-color        = "#b9bec6"
-selected-fill-alpha   = 0.18
-selected-border       = "#b9bec6"
-selected-border-width = 0
+selected-color        = "#eceff2"
+selected-fill-alpha   = 0.16
+selected-border       = "#ad2222 #ad2222 #ad2222 #ad2222 #eceff2 #ad2222 #ad2222 #ad2222 #ad2222 #ad2222 35deg"
+selected-border-width = "0 0 1 0"
 selected-border-alpha = 1.0
 
 # Momentary fills.
@@ -124,8 +124,8 @@ base-size = 12
 # Border accepts either a solid color or a Hyprland-style gradient. Border
 # widths accept one CSS-style scalar/list: N, "Y X", "T X B", or "T R B L";
 # individual border-width-top/right/bottom/left keys override the list.
-background       = "#181a1f"
-background-alpha = 1.0
+background       = "#20232a"
+background-alpha = 0.98
 text             = "#b9bec6"
 border           = "hyprland.active-border"
 border-alpha     = 1.0
@@ -134,15 +134,15 @@ border-alpha     = 1.0
 [tooltip]
 # Hover tooltips across the bar, panels, and buttons. background-alpha of
 # 0.97 mirrors the legacy hard-coded tooltip opacity.
-background       = "#181a1f"
+background       = "#20232a"
 background-alpha = 0.97
 text             = "#b9bec6"
 border           = "hyprland.active-border-foreground"
 border-alpha     = 1.0
 
 [notifications]
-background       = "#181a1f"
-background-alpha = 1.0
+background       = "#20232a"
+background-alpha = 0.98
 text             = "#b9bec6"
 # Conventionally matches the Hyprland active-window border. Border accepts
 # either a solid color or the full active-border gradient.
@@ -156,35 +156,37 @@ countdown        = "#ad2222"
 # companions go from 0 (invisible) to 1 (opaque). scrim is the full-screen
 # dim layer behind the card; background is the card itself. Defaults
 # mirror [menu] with the card at 0.95 to preserve the legacy translucency.
-background                = "#181a1f"
-background-alpha          = 0.95
+background                = "#20232a"
+background-alpha          = 0.97
 text                      = "#b9bec6"
 border                    = "hyprland.active-border-foreground"
 border-alpha              = 1.0
-scrim                     = "#181a1f"
-scrim-alpha               = 0.5
-selected-background       = "#b9bec6"
-selected-background-alpha = 0.08
-selected-text             = "#ad2222"
+scrim                     = "#101216"
+scrim-alpha               = 0.62
+selected-background       = "#2b2f37"
+selected-background-alpha = 1.0
+selected-text             = "#eceff2"
 selected-border           = "hyprland.active-border-foreground"
-selected-border-alpha     = 0.25
+selected-border-alpha     = 1.0
+selected-border-width     = "0 0 1 0"
 
 [menu]
 # Cards, rows, and selected-row treatment. Alpha companions (where present)
 # go from 0 (invisible) to 1 (opaque). scrim is the full-screen dim layer
 # behind the card. Clipboard and emojis inherit these tokens.
-background                = "#181a1f"
+background                = "#20232a"
 background-alpha          = 1.0
 text                      = "#b9bec6"
 border                    = "hyprland.active-border-foreground"
 border-alpha              = 1.0
-scrim                     = "#181a1f"
-scrim-alpha               = 0.5
-selected-background       = "#b9bec6"
-selected-background-alpha = 0.08
-selected-text             = "#ad2222"
+scrim                     = "#101216"
+scrim-alpha               = 0.62
+selected-background       = "#2b2f37"
+selected-background-alpha = 1.0
+selected-text             = "#eceff2"
 selected-border           = "hyprland.active-border-foreground"
-selected-border-alpha     = 0.25
+selected-border-alpha     = 1.0
+selected-border-width     = "0 0 1 0"
 
 [polkit]
 # Polkit authentication prompt (sudo/password dialogs). scrim is the
@@ -192,15 +194,15 @@ selected-border-alpha     = 0.25
 # text-error tints the lock icon, password text, and placeholder when
 # authentication fails. border-alpha applies to both border and
 # border-error (the two states are mutually exclusive in time).
-background       = "#181a1f"
-background-alpha = 1.0
+background       = "#20232a"
+background-alpha = 0.98
 text             = "#b9bec6"
 text-error       = "#e53939"
 border           = "hyprland.active-border"
 border-error     = "#e53939"
 border-alpha     = 1.0
-scrim            = "#181a1f"
-scrim-alpha      = 0.5
+scrim            = "#101216"
+scrim-alpha      = 0.62
 # accent is the lock-icon glyph color + text-selection tint.
 accent           = "#ad2222"
 
@@ -210,10 +212,10 @@ accent           = "#ad2222"
 # through idle, typing/authenticating, and wrong-password states.
 # border-alpha applies to all three border states (they are mutually
 # exclusive in time).
-background       = "#181a1f"
-background-alpha = 0.8
+background       = "#20232a"
+background-alpha = 0.94
 text             = "#b9bec6"
-placeholder      = "#82868d"
+placeholder      = "#8f949c"
 text-error       = "#e53939"
 border           = "hyprland.active-border"
 border-active    = "hyprland.active-border"
@@ -228,8 +230,8 @@ selection-alpha  = 0.45
 # the full-screen wash. Per-slice dim overlays and text outlines on top
 # of the scrim track the foundational background color directly.
 # unselected-border-alpha softens carousel slices that aren't selected.
-scrim                   = "#181a1f"
-scrim-alpha             = 0.5
+scrim                   = "#101216"
+scrim-alpha             = 0.62
 text                    = "#b9bec6"
 selected-border         = "#ad2222"
 selected-border-alpha   = 1.0

@@ -143,8 +143,8 @@
       "mode": "month",
       "format": {
         "month": "<span color='#c3c8d0'><b>{}</b></span>",
-        "weekdays": "<span color='#9e1a1a'><b>{}</b></span>",
-        "today": "<span color='#ad2222'><b>{}</b></span>"
+        "weekdays": "<span color='#f04a4a'><b>{}</b></span>",
+        "today": "<span color='#ff5c5c'><b>{}</b></span>"
       }
     },
     "interval": 60

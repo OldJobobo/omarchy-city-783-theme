@@ -1,12 +1,13 @@
-@define-color accent #ff2222;
+@define-color accent #ad2222;
+@define-color accent-text #ff5c5c;
 @define-color bg #181a1f;
 @define-color fg #eceff2;
-@define-color ws-bg #bebcc0;
+@define-color ws-bg #b9bec6;
 @define-color inactive #8f949c;
-@define-color ws-surface #2f343d;
-@define-color ws-empty #232831;
+@define-color ws-surface #2b2f37;
+@define-color ws-empty #20232a;
 @define-color ws-empty-text #8f949c;
-@define-color indicator-idle #9a9a9a;
+@define-color indicator-idle #8f949c;
 
 
 
@@ -28,7 +29,7 @@ window#waybar {
 #custom-omarchy {
   background-color: @accent;
   background-image: none;
-  color: @bg;
+  color: @fg;
   font-size: 20px;
   font-weight: 900;
   padding: 4px 10px;
@@ -193,7 +194,7 @@ window#waybar {
 }
 
 #custom-compact-toggle.compact-on {
-  color: @accent;
+  color: @accent-text;
 }
 
 #custom-screenrecording-indicator {
@@ -203,22 +204,7 @@ window#waybar {
 
 #idle_inhibitor.activated,
 #custom-screenrecording-indicator.active {
-  animation: indicator-breathe 3.5s ease-in-out infinite;
-}
-
-@keyframes indicator-breathe {
-  0% {
-    color: @indicator-idle;
-  }
-  35% {
-    color: @accent;
-  }
-  65% {
-    color: @accent;
-  }
-  100% {
-    color: @indicator-idle;
-  }
+  color: @accent-text;
 }
 
 #pulseaudio {
@@ -227,9 +213,8 @@ window#waybar {
 
 #mpris.playing,
 #mpris.playing label {
-  color: #ffffff;
-  text-shadow: -90px 0 12px rgba(255, 90, 80, 0), -60px 0 12px rgba(255, 90, 80, 0.85), -30px 0 16px rgba(255, 90, 80, 1), 0 0 12px rgba(255, 90, 80, 0.85), 30px 0 12px rgba(255, 90, 80, 0);
-  animation: mpris-sweep 2s linear infinite, mpris-pulse 3.5s ease-in-out infinite;
+  color: @fg;
+  text-shadow: 0 0 12px rgba(255, 92, 92, 0.8);
 }
 
 #mpris {
@@ -249,38 +234,11 @@ window#waybar {
   color: @indicator-idle;
 }
 
-@keyframes mpris-sweep {
-  0% {
-    text-shadow: -120px 0 14px rgba(255, 90, 80, 0), -80px 0 14px rgba(255, 90, 80, 0.7), -40px 0 18px rgba(255, 90, 80, 1), 0 0 14px rgba(255, 90, 80, 0.7);
-  }
-  50% {
-    text-shadow: -40px 0 18px rgba(255, 90, 80, 1), 0 0 14px rgba(255, 90, 80, 0.8), 40px 0 14px rgba(255, 90, 80, 0.2), -80px 0 14px rgba(255, 90, 80, 0.2);
-  }
-  100% {
-    text-shadow: 40px 0 14px rgba(255, 90, 80, 0.2), 0 0 14px rgba(255, 90, 80, 0.8), -40px 0 18px rgba(255, 90, 80, 1), -80px 0 14px rgba(255, 90, 80, 0.7);
-  }
-}
-
-@keyframes mpris-pulse {
-  0% {
-    color: @indicator-idle;
-  }
-  40% {
-    color: @accent;
-  }
-  70% {
-    color: @accent;
-  }
-  100% {
-    color: @indicator-idle;
-  }
-}
-
 
 #cpu,
 #memory {
   background: @accent;
-  color: @bg;
+  color: @fg;
   font-size: 18px;
   padding: 0 6px;
   min-width: 38px;
